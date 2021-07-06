@@ -48,6 +48,10 @@ a:hover {
     padding: 100px 50px;
 }
 
+.bloc-lg2{
+    padding: 30px 50px;
+}
+
 .bloc-md {
     padding: 50px;
 }
@@ -649,9 +653,9 @@ p,
 label,
 .btn,
 a {
-    font-family: "helvetica";
+    font-family: Helvetica;
     font-weight: 400;
-    color: #575757!important;
+    color: #353434!important;
 }
 
 .container {
@@ -705,7 +709,7 @@ p {
 }
 
 h2 {
-    font-size: 22px;
+    font-size: 26px;
     line-height: 1.4em;
 }
 
@@ -717,7 +721,7 @@ h3 {
 }
 
 .med-width-whitespace {
-    max-width: 800px;
+    max-width: 1000px;
     margin: auto auto auto auto;
     box-shadow: 0px 0px 0px #000000;
 }
@@ -738,14 +742,17 @@ h4 {
 .white {
     color: #FFFFFF!important;
 }
-
+.portfolio-link {
+    width:fit-content;
+    margin: auto;
+}
 .portfolio-thumb {
+    
     margin-bottom: 24px;
 }
 
-.portfolio-row {
+.space-bottom {
     margin-bottom: 44px;
-    margin-top: 50px;
 }
 
 .avatar {
@@ -753,8 +760,8 @@ h4 {
 }
 
 .black-background {
-    background-color: rgba(131, 117, 77, 0.979);
-    padding: 40px 40px 40px 40px;
+    background-color: rgba(0, 0, 0, 0.589);
+    padding: 40px 40px 0px 40px;
 }
 
 .bold-link {
@@ -821,44 +828,115 @@ h4 {
     background-image: url("../img/background-image/image-de-presentation.jpg");
 }
 
+.nav > li {
+    font-size: 20px;
+}
+
 p {
-    font-size: 16px;
+    font-size: 18px;
+}
+
+.bgc-grey {
+    background-color:#eee4df;
+}
+
+.cblack {
+    color: #f3976c!important;
+    border: 3px solid #F3976C;
+    background-color: #00000000!important;
+}
+
+.cblack:focus, .cblack:hover {
+    color: #000!important;
+    background-color: #f3976c!important;
+    border: 3px solid #F3976C;
+}
+
+.contrastbg {
+    background-color: rgba(0, 0, 0, 0.486);
+    padding: 30px 0px 50px 0px;
 }
 
 .focus1 {
-    border: 3px double white;
+    border-top: 2px solid #eee4df;
+    border-bottom: 2px solid #eee4df;
+    border-radius: 0px;
 }
 
 .focus1:focus, .focus1:hover {
-    border: 3px double #F3976C;
+    border-top: 2px solid #F3976C;
+    border-bottom: 2px solid #F3976C;
 }
 
 .focus2 {
-    padding: 5px;
-    border-radius: 9999px;
+    border-top: 2px solid rgba(0, 0, 0, 0);
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 0px;
 }
 
 .focus2:focus, .focus2:hover{
-    background-color:#F3976C!important;
+    border-top: 2px solid #F3976C;
+    border-bottom: 2px solid #F3976C;
 }
-
-.focus3:focus {
-    background-color: #c27956;
-}
-
-
 
 .icon-md {
-    padding: 5px;
-    color: #cccccc!important;
+    color: black!important;
 }
 
-.focusf:focus, .focusf:hover {
-    background-color: white;
-    color: #F3976C!important;
+.focusf {
+    width: 38px;
+    height: 45px;
 }
 
+.focusf a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%!important;
+    height: 100%!important;
+    text-decoration: none;
+}
 
+.focusf a:focus {
+    color: #f3976c!important;
+    background-color: black;
+}
+
+.focusf a:hover {
+    color: #f3976c!important;
+    background-color: black;
+}           
+
+.citation {
+    font-size: 16px;
+}
+
+.margin-bottom {
+    margin-bottom: 40px;
+}
+
+.margin-extra-bottom {
+    margin-bottom: 70px;
+}
+
+.no-pad {
+    padding: 0!important;
+}
+
+.shade {
+    max-width:100%!important;
+    margin:0!important;
+    background-color: #f3976c;
+}
+
+.black {
+    color: black!important;
+    padding-top: 30px;
+}
+
+.spacer {
+    padding: 0px 20px;
+}
 
 
 @media (max-width: 1024px) {
@@ -927,11 +1005,9 @@ p {
 
 @media (max-width: 767px) {
     .page-container {
-        overflow-x: hidden;
         position: relative;
     }
     h1,
-    h2,
     h3,
     h4,
     h5,
@@ -1074,5 +1150,19 @@ p {
 @media (max-width: 767px) {
     .bloc-mob-center-text {
         text-align: center;
+    }
+
+    .focus2 {
+        border-radius: 0;
+    }
+
+    h2 {
+        padding-left: 20px!important;
+        padding-right: 20px!important;
+    }
+
+    .flex {
+        display: flex;
+        justify-content: space-between;
     }
 }
