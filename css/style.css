@@ -853,7 +853,7 @@ p {
 }
 
 .contrastbg {
-    background-color: rgba(0, 0, 0, 0.486);
+    background-color: rgba(0, 0, 0, 0.786);
     padding: 30px 0px 50px 0px;
 }
 
@@ -938,6 +938,39 @@ p {
     padding: 0px 20px;
 }
 
+.formtitle {
+    margin-top: 0!important;
+    font-weight: bold;
+}
+
+.maptitle {
+    margin-top: 0!important;
+    font-size: 22px;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    font-size: 20px;
+}
+
+.adresse {
+    font-size: 18px;
+}
+
+.mailto {
+    margin-top: 20px;
+}
+
+.mailtolink {
+    text-decoration: underline;
+}
+
+.black2 {
+    color: black!important;
+}
 
 @media (max-width: 1024px) {
     .bloc {
@@ -1164,5 +1197,9 @@ p {
     .flex {
         display: flex;
         justify-content: space-between;
+    }
+
+    form {
+        margin-bottom:60px;
     }
 }
