@@ -972,6 +972,18 @@ label {
     color: black!important;
 }
 
+.screen-reader {
+	border: 0;
+	clip: rect(0 0 0 0);
+	height: 1px;
+	margin: -1px;
+	overflow: hidden;
+	padding: 0;
+	position: absolute;
+	white-space: nowrap;
+	width: 1px;
+}
+
 @media (max-width: 1024px) {
     .bloc {
         padding-left: 20px;
@@ -1181,6 +1193,7 @@ label {
 }
 
 @media (max-width: 767px) {
+
     .bloc-mob-center-text {
         text-align: center;
     }
