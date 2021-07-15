@@ -984,6 +984,10 @@ label {
 	width: 1px;
 }
 
+.italic {
+    font-style: italic;
+}
+
 @media (max-width: 1024px) {
     .bloc {
         padding-left: 20px;
@@ -1183,16 +1187,6 @@ label {
         width: 180px;
         height: 320px;
     }
-}
-
-@media (max-width: 400px) {
-    .bloc {
-        padding-left: 0;
-        padding-right: 0;
-    }
-}
-
-@media (max-width: 767px) {
 
     .bloc-mob-center-text {
         text-align: center;
@@ -1214,5 +1208,16 @@ label {
 
     form {
         margin-bottom:60px;
+    }
+
+    .portfolio-thumb {
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 400px) {
+    .bloc {
+        padding-left: 0;
+        padding-right: 0;
     }
 }
